@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customtitle">
+        <item name="android:fontFamily">@font/fonth3</item>
+        <item name="android:textSize">56sp</item>
+        <!-- Các thuộc tính khác nếu cần -->
+    </style>
+
+</resources>

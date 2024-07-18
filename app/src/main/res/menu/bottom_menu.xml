@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home01"
+        android:title="Trang Chủ"
+        android:icon="@android:drawable/ic_lock_power_off"/>
+    <item android:id="@+id/chat"
+        android:title="Hóa Đơn"
+        android:icon="@drawable/iconhoadon"/>
+    <item android:id="@+id/contact"
+        android:title="Cá Nhân"
+        android:icon="@drawable/baseline_person_24"/>
+</menu>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="18dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thay đổi thông tin"
+        android:textSize="32dp"
+        android:fontFamily="@font/fonth3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Họ và tên:"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edt_banan"
+            android:id="@+id/ed_hoTenNhanVienTT_update"></EditText>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Tuổi:"
+            android:paddingLeft="10dp"
+            android:background="@drawable/custom_edt_banan"
+            android:id="@+id/ed_tuoiNhanVienTT_update"
+            android:layout_marginBottom="20dp"
+            ></EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/custom_edt_banan"
+            android:layout_marginBottom="20dp"
+            >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Giới tính: "
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/rdo_Nam_pr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nam" />
+            <RadioButton
+                android:id="@+id/rdo_Nu_pr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nữ" />
+        </RadioGroup>
+        </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Số điện thoại:"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_edt_banan"
+        android:id="@+id/ed_sdtNhanVienTT_update"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        ></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Thay đổi"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#44E24A"
+            android:id="@+id/btn_update_profile"></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Huỷ"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#DF3A3A"
+            android:id="@+id/btn_update_profile_cancel"></Button>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+

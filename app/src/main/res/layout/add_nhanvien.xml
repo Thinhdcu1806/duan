@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm nhân viên"
+        android:textSize="32dp" />
+
+    <EditText
+        android:id="@+id/ed_maNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edt_banan"
+        android:elevation="5dp"
+        android:hint="Mã nhân viên: "
+        android:paddingVertical="20dp"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/edhoten_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edt_banan"
+        android:elevation="5dp"
+        android:hint="Họ tên: "
+        android:inputType="text"
+        android:paddingVertical="20dp"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/ed_tuoiNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edt_banan"
+        android:elevation="5dp"
+        android:hint="Tuổi: "
+        android:inputType="number"
+        android:paddingVertical="20dp"
+        android:paddingLeft="15dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edt_banan"
+        android:elevation="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:paddingLeft="15dp"
+            android:text="Giới tính: "
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edt_banan"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <RadioButton
+                android:id="@+id/rdo_Nam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nam" />
+            <RadioButton
+                android:id="@+id/rdo_Nu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nữ" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_sdtNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:background="@drawable/custom_edt_banan"
+        android:elevation="5dp"
+        android:hint="Số điện thoại: "
+        android:paddingVertical="20dp"
+        android:paddingLeft="15dp" />
+    <EditText
+        android:id="@+id/ed_matKhau_nv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edt_banan"
+        android:elevation="5dp"
+        android:hint="Mật Khẩu: "
+        android:paddingVertical="20dp"
+        android:paddingLeft="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_themNhanVien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_banan"
+            android:elevation="5dp"
+            android:text="Thêm"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_huyThemNhanVien"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_huy"
+            android:elevation="5dp"
+            android:text="Huỷ"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

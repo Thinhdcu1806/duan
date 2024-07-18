@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9E9"
+    tools:context="com.ph36492.khopro.Fragment.DoiMatKhauFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/changepasss" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="320dp"
+            android:layout_height="400dp"
+            android:background="#FFF6F5"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.557">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#BAAFAF"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:startIconDrawable="@drawable/userlogin">
+
+                    <EditText
+
+                        android:id="@+id/ed_manguoidung_changePass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mã người dùng"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000"
+                        android:textColorHint="#DDD5D5" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#BAAFAF"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    android:layout_marginTop="14dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:startIconDrawable="@drawable/userlogin">
+
+                    <EditText
+
+                        android:id="@+id/ed_username_changePass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tên người dùng"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000"
+                        android:textColorHint="#DDD5D5" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:textColorHint="#BAAFAF"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:iconTint="@null"
+                    app:passwordToggleEnabled="true"
+                    app:startIconDrawable="@drawable/passwordlogin">
+
+                    <EditText
+                        android:id="@+id/ed_passwordChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mật khẩu cũ"
+                        android:inputType="textPassword"
+                        android:textColor="#000000"
+                        android:textColorHint="#DDD5D5" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:textColorHint="#BAAFAF"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="20dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="20dp"
+                    app:iconTint="@null"
+                    app:passwordToggleEnabled="true"
+                    app:startIconDrawable="@drawable/passwordlogin">
+
+                    <EditText
+                        android:id="@+id/ed_passwordNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mật khẩu mới"
+                        android:textColor="#000000"
+                        android:inputType="textPassword"
+                        android:textColorHint="#DDD5D5" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_cancel_changePass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#F71B33"
+                        android:text="Huỷ"
+                        app:cardCornerRadius="10dp"
+                        android:paddingHorizontal="42dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_confirm_changPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#44E24A"
+                        android:text="Xác nhận"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginLeft="20dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ivSuccess"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_check"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:id="@+id/iverorr"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/error"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        />
+
+</FrameLayout>

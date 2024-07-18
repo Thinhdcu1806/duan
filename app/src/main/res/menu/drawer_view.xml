@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_QLMonAn"
+            android:title="Quản Lý Món Ăn"
+            android:icon="@drawable/iconmonan"
+            />
+        <item android:id="@+id/nav_QLDanhMuc"
+            android:title="Quản lý Danh Mục"
+            android:icon="@drawable/icondanhmuc"/>
+
+        <item android:id="@+id/nav_QLBanAn"
+            android:title="Quản Lý Bàn Ăn"
+            android:icon="@drawable/iconbanan"
+            />
+        <item android:id="@+id/nav_QLMaGiamGia"
+            android:title="Quản Lý Mã Giảm Giá"
+            android:icon="@drawable/icongiamgia"
+            />
+        <item android:id="@+id/nav_QLNhanVien"
+            android:title="Quản Lý Nhân Viên"
+            android:icon="@drawable/iconnhanvien"
+            />
+        <item android:title="Thống Kê">
+            <menu>
+                <item android:id="@+id/nav_ThongKe"
+                    android:title="Thống Kê"
+                    android:icon="@drawable/iconthongke"
+                    />
+            </menu>
+        </item>
+    </group>
+</menu>

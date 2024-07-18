@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/custom_item"
+        android:padding="10dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMaNhanVien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã Nhân Viên: "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHoTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Họ Tên: " />
+
+            <TextView
+                android:id="@+id/tvTuoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuổi: " />
+
+            <TextView
+                android:id="@+id/tvGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giới Tính: " />
+
+            <TextView
+                android:id="@+id/tvSoDienThoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số Điện Thoại: " />
+
+            <TextView
+                android:id="@+id/tvMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mật Khẩu: " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btimg_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_edit" />
+
+            <ImageButton
+                android:id="@+id/btimg_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_delete"
+                android:layout_marginLeft="20dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
